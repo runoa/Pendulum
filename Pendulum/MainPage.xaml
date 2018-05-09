@@ -7,9 +7,10 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Margin="0,0,793,371">
-        <TextBlock x:Name="active_window" HorizontalAlignment="Left" Margin="138,120,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="36"/>
-        <Button x:Name="start_button" Content="Start" HorizontalAlignment="Left" Margin="207,273,0,0" VerticalAlignment="Top" Height="72" Width="196" Click="Button_Click"/>
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Margin="0,0,9,4" Width="1500" Height="1000">
+        <ListView x:Name="time_list_view" HorizontalAlignment="Left" Height="500" VerticalAlignment="Top" Width="200" FontFamily="Segoe UI" Margin="20,20,20,20"/>
+        <ListView x:Name="detail_list_view" HorizontalAlignment="Left" Height="960" Margin="240,20,0,1" VerticalAlignment="Top" Width="1240"/>
+        <Button x:Name="reset_button" Content="リセット" HorizontalAlignment="Left" Margin="20,540,0,0" VerticalAlignment="Top" FontFamily="Segoe UI" Width="200" Height="48" Click="reset_button_Click"/>
 
     </Grid>
 </Page>
